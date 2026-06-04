@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quality Floors</title>
+    <link rel="stylesheet" href="/assets/projects.css">
+    <script src="/assets/projects.js" defer></script>
+    <script src="https://kit.fontawesome.com/7178c88896.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <section id="landing">
+        <div class="overlay" onclick="closeMenu()"></div>
+        <nav class="nav">
+            <div class="nav_container row">
+            <div class="nav_logo">
+                <img src="/assets/Logo.png" alt="Logo">
+            </div>
+                <div class="nav_links">
+                    <a  class="nav_link sign-up" href="/index.html">Home</a>
+            </div>
+            <button class="btn_menu" onclick="openMenu()">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="menu">
+    <button class="btn_menu btn_menu-close" onclick="closeMenu()">
+        <i class="fas fa-times"></i>
+    </button>
+
+    <div class="menu_links">
+        <a class="menu_link menu_link-primary" href="/index.html" onclick="closeMenu()">Home</a>
+    </div>
+</div>
+</div>
+</nav>
+<section class="projects_hero">
+
+    <div class="projects_hero-overlay">
+
+        <h1>Our Work Speaks For Itself</h1>
+
+        <p>
+            Browse a collection of recent flooring transformations completed
+            by the Quality Floors team throughout the Collegedale Area.
+        </p>
+
+    </div>
+
+</section>
+    </section>
+    <section id="Projects">
+    <div class="container white_container">
+
+        <div class="row">
+
+            <div class="section_wrapper">
+
+                <h1 class="section_title">PROJECTS</h1>
+
+                <h2 class="section_sub-title">Before & After Transformations</h2>
+
+                <p class="section_para">Our premium portfolio highlights recent residential and commercial work. Filter by material or click any project to view details and full-size imagery.</p>
+
+                <div class="projects_controls">
+                    <div class="projects_filters" role="tablist" aria-label="Project filters">
+                        <button class="filter-btn active" data-filter="all">All</button>
+                        <button class="filter-btn" data-filter="hardwood">Hardwood</button>
+                        <button class="filter-btn" data-filter="vinyl">Luxury Vinyl</button>
+                        <button class="filter-btn" data-filter="tile">Tile</button>
+                        <button class="filter-btn" data-filter="laminate">Laminate</button>
+                        <button class="filter-btn" data-filter="carpet">Carpet</button>
+                    </div>
+                </div>
+
+                <div class="projects_grid">
+
+                    <article class="project_card fade_up" data-type="hardwood" data-index="0">
+                        <div class="project_media">
+                            <img src="/assets/project1.png" alt="Oak living room before and after">
+                        </div>
+                        <div class="project_body">
+                            <h3>Oak Living Room</h3>
+                            <p class="project_meta">Hardwood • Residential</p>
+                            <button class="btn_primary view-project" data-index="0">View Project</button>
+                        </div>
+                    </article>
+
+                    <article class="project_card fade_up" data-type="vinyl" data-index="1">
+                        <div class="project_media">
+                            <img src="/assets/project2.png" alt="Kitchen luxury vinyl plank install">
+                        </div>
+                        <div class="project_body">
+                            <h3>Modern Kitchen LVP</h3>
+                            <p class="project_meta">Luxury Vinyl • Residential</p>
+                            <button class="btn_primary view-project" data-index="1">View Project</button>
+                        </div>
+                    </article>
+
+                    <article class="project_card fade_up" data-type="hardwood carpet" data-index="2">
+                        <div class="project_media">
+                            <img src="/assets/project3.png" alt="Basement laminate flooring">
+                        </div>
+                        <div class="project_body">
+                            <h3>Basement Refresh</h3>
+                            <p class="project_meta">Hardwood • From Carpet</p>
+                            <button class="btn_primary view-project" data-index="2">View Project</button>
+                        </div>
+                    </article>
+
+                    <article class="project_card fade_up" data-type="tile hardwood" data-index="3">
+                        <div class="project_media">
+                            <img src="/assets/project4.png" alt="Tile bathroom remodel">
+                        </div>
+                        <div class="project_body">
+                            <h3>Tile Replacement</h3>
+                            <p class="project_meta">Hardwood • Kitchen</p>
+                            <button class="btn_primary view-project" data-index="3">View Project</button>
+                        </div>
+                    </article>
+
+                    <article class="project_card fade_up" data-type="carpet hardwood" data-index="4">
+                        <div class="project_media">
+                            <img src="/assets/project5.png" alt="Carpet replacement to LVP">
+                        </div>
+                        <div class="project_body">
+                            <h3>Bedroom Update</h3>
+                            <p class="project_meta">Carpet Replacement • Hardwood</p>
+                            <button class="btn_primary view-project" data-index="4">View Project</button>
+                        </div>
+                    </article>
+
+                    <article class="project_card fade_up" data-type="laminate" data-index="5">
+                        <div class="project_media">
+                            <img src="/assets/project6.png" alt="Full room flooring renovation">
+                        </div>
+                        <div class="project_body">
+                            <h3>Full Renovation</h3>
+                            <p class="project_meta">Laminate • Commercial</p>
+                            <button class="btn_primary view-project" data-index="5">View Project</button>
+                        </div>
+                    </article>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- Project modal -->
+    <div id="project-modal" class="project-modal" aria-hidden="true">
+        <div class="modal-overlay" data-close></div>
+        <div class="modal-content" role="dialog" aria-modal="true" aria-label="Project details">
+            <button class="modal-close" data-close aria-label="Close modal">×</button>
+            <div class="modal-media">
+                <img class="modal-img" src="" alt="">
+            </div>
+            <div class="modal-body">
+                <h3 class="modal-title"></h3>
+                <p class="modal-desc"></p>
+                <div class="modal-controls">
+                    <button class="modal-prev" aria-label="Previous project">←</button>
+                    <button class="modal-next" aria-label="Next project">→</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</section>
+</body>
+<footer>
+
+    <div class="footer_container">
+
+        <img
+        src="/assets/Logo.png"
+        alt="Quality Floors Logo">
+
+        <h3>Quality Floors</h3>
+
+        <p>
+            Premium flooring installation throughout the Collegedale Area.
+        </p>
+
+        <div class="footer_socials">
+
+            <a href="#">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="tel:4235555555">
+                <i class="fas fa-phone"></i>
+            </a>
+
+            <a href="mailto:info@qualityfloors.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+        </div>
+
+        <p>
+            Licensed & Insured
+        </p>
+
+        <p>
+            © 2026 Quality Floors. All Rights Reserved.
+        </p>
+
+    </div>
+
+</footer>
+</html>

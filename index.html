@@ -10,6 +10,21 @@
 </head>
 <body>
     <section id="landing">
+        <div class="menu">
+    <button class="btn_menu btn_menu-close" onclick="closeMenu()">
+        <i class="fas fa-times"></i>
+    </button>
+
+    <div class="menu_links">
+        <a class="menu_link" href="/assets/about.html">About</a>
+        <a class="menu_link" href="/assets/services.html">Services</a>
+        <a class="menu_link" href="/assets/location.html">Find Us</a>
+        <a class="menu_link" href="/assets/US.html">Meet Us</a>
+        <a class="menu_link" href="/assets/FAQ.html">FAQ</a>
+        <a class="menu_link" href="/assets/projects.html">Projects</a>
+        <a class="menu_link menu_link-primary" href="#Contact" onclick="closeMenu()">Contact Us</a>
+    </div>
+</div>
         <div class="overlay" onclick="closeMenu()"></div>
         <nav class="nav">
             <div class="nav_container row">
@@ -17,26 +32,17 @@
                 <img src="/assets/Logo.png" alt="Logo">
             </div>
                 <div class="nav_links">
-                    <a  class="nav_link" href="assets/about.html">About</a>
-                    <a  class="nav_link" href="assets/location.html">Find Us</a>
-                    <a  class="nav_link login" href="#Projects">Projects</a>
+                    <a  class="nav_link" href="/assets/about.html">About</a>
+                    <a  class="nav_link" href="/assets/services.html">Services</a>
+                    <a  class="nav_link" href="/assets/location.html">Find Us</a>
+                    <a  class="nav_link" href="/assets/US.html">Meet Us</a>
+                    <a  class="nav_link" href="/assets/FAQ.html">FAQ</a>
+                    <a  class="nav_link login" href="/assets/projects.html">Projects</a>
                     <a  class="nav_link sign-up" href="#Contact">Contact Us</a>
             </div>
             <button class="btn_menu" onclick="openMenu()">
             <i class="fas fa-bars"></i>
         </button>
-        <div class="menu">
-    <button class="btn_menu btn_menu-close" onclick="closeMenu()">
-        <i class="fas fa-times"></i>
-    </button>
-
-    <div class="menu_links">
-        <a class="menu_link" href="/assets/about.html" onclick="closeMenu()">About</a>
-        <a class="menu_link" href="/assets/location.html" onclick="closeMenu()">Find Us</a>
-        <a class="menu_link" href="#Projects" onclick="closeMenu()">Projects</a>
-        <a class="menu_link menu_link-primary" href="#Contact" onclick="closeMenu()">Contact Us</a>
-    </div>
-</div>
 </div>
 </nav>
     </section>
@@ -57,28 +63,257 @@
         <a href="#Contact" class="hero_btn">Get a Free Estimate</a>
     </div>
 </section>
-<section id="Projects">
-    <div class="container">
+<!-- TRUST BAR -->
+
+<section class="trust_bar">
+    <div class="row trust_row">
+        <div class="trust_item">
+            ⭐ 5-Star Service
+        </div>
+
+        <div class="trust_item">
+            ✓ Free Estimates
+        </div>
+
+        <div class="trust_item">
+            ✓ Residential & Commercial
+        </div>
+
+        <div class="trust_item">
+            ✓ Fully Insured
+        </div>
+    </div>
+</section>
+
+<!-- PROCESS -->
+
+<section id="Process">
+    <div class="container process_container">
+
         <div class="row">
-            <div class="projects_title">
-                <h1 class="section_title">PROJECTS</h1>
-                <h2 class="section_sub-title">We <span class="green">care</span> about our clients, and your <span class="green">floors</span>.</h2>
+            <div class="section_wrapper">
+
+                <h1 class="section_title">
+                    OUR PROCESS
+                </h1>
+
+                <h2 class="section_sub-title">
+                    Simple. Transparent. Professional.
+                </h2>
+
+                <div class="process_steps">
+
+                    <div class="step fade_up">
+                        <span>1</span>
+                        <h3>Free Estimate</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="step fade_up">
+                        <span>2</span>
+                        <h3>Material Selection</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="step fade_up">
+                        <span>3</span>
+                        <h3>Installation</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                    <div class="step fade_up">
+                        <span>4</span>
+                        <h3>Final Walkthrough</h3>
+                        <p>Lorem ipsum dolor sit amet.</p>
+                    </div>
+
+                </div>
+
             </div>
         </div>
+
     </div>
 </section>
-<section id="Contact">
+
+<!-- REVIEWS -->
+
+<section id="Reviews">
     <div class="container">
+
         <div class="row">
-            <div class="contact_title">
-                <h1 class="section_title">CONTACT US</h1>
-                <h2 class="section_sub-title"><span class="green">Trust us</span> with your flooring needs <span class="green">today</span></h2>
+
+            <div class="section_wrapper">
+
+                <h1 class="section_title">
+                    REVIEWS
+                </h1>
+
+                <h2 class="section_sub-title">
+                    What customers are saying.
+                </h2>
+
+                <div class="review_grid">
+
+                    <div class="review_card">
+                        ⭐⭐⭐⭐⭐
+                        <p>
+                            "Lorem ipsum dolor sit amet consectetur."
+                        </p>
+                        <strong>- Customer Name</strong>
+                    </div>
+
+                    <div class="review_card">
+                        ⭐⭐⭐⭐⭐
+                        <p>
+                            "Lorem ipsum dolor sit amet consectetur."
+                        </p>
+                        <strong>- Customer Name</strong>
+                    </div>
+
+                    <div class="review_card">
+                        ⭐⭐⭐⭐⭐
+                        <p>
+                            "Lorem ipsum dolor sit amet consectetur."
+                        </p>
+                        <strong>- Customer Name</strong>
+                    </div>
+
+                </div>
+
+            </div>
+
         </div>
-    </div>
+
     </div>
 </section>
-</body>
+
+<!-- CONTACT -->
+
+<section id="Contact">
+
+    <div class="container contact_container">
+
+        <div class="row">
+
+            <div class="contact_wrapper">
+
+                <h1 class="section_title">
+                    CONTACT US
+                </h1>
+
+                <h2 class="section_sub-title">
+                    Let's discuss your project.
+                </h2>
+
+                <form class="contact_form">
+
+                    <input
+                    type="text"
+                    placeholder="Name">
+
+                    <input
+                    type="email"
+                    placeholder="Email">
+
+                    <input
+                    type="tel"
+                    placeholder="Phone Number">
+
+                    <textarea
+                    placeholder="Tell us about your project"></textarea>
+
+                    <button type="submit">
+                        Request Estimate
+                    </button>
+
+                </form>
+
+                <div class="contact_info">
+
+                    <p>📞 (555) 555-5555</p>
+
+                    <p>✉️ qualityfloors@email.com</p>
+
+                    <p>📍 Chattanooga, Tennessee</p>
+
+                    <p>📘 Facebook Page Link</p>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!-- CTA -->
+
+<section class="bottom_cta">
+
+    <h2>
+        Ready to transform your floors?
+    </h2>
+
+    <p>
+        Contact us today for a free estimate.
+    </p>
+
+    <a href="#Contact" class="hero_btn">
+        Get Started
+    </a>
+
+</section>
+
+<!-- FLOATING CALL BUTTON -->
+
+<a href="tel:5555555555" class="floating_call">
+    <i class="fas fa-phone"></i>
+</a>
+
+<!-- FOOTER -->
+
 <footer>
 
+    <div class="footer_container">
+
+        <img
+        src="/assets/Logo.png"
+        alt="Quality Floors Logo">
+
+        <h3>Quality Floors</h3>
+
+        <p>
+            Premium flooring installation throughout the Collegedale Area.
+        </p>
+
+        <div class="footer_socials">
+
+            <a href="#">
+                <i class="fab fa-facebook-f"></i>
+            </a>
+
+            <a href="tel:4235555555">
+                <i class="fas fa-phone"></i>
+            </a>
+
+            <a href="mailto:info@qualityfloors.com">
+                <i class="fas fa-envelope"></i>
+            </a>
+
+        </div>
+
+        <p>
+            Licensed & Insured
+        </p>
+
+        <p>
+            © 2026 Quality Floors. All Rights Reserved.
+        </p>
+
+    </div>
+
 </footer>
+</body>
 </html>
