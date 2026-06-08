@@ -61,6 +61,7 @@ nav {
   width: 100%;
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
 }
 
 .nav_logo {
@@ -81,6 +82,7 @@ nav {
   display: flex;
   align-items: center;
   padding-bottom: 2px;
+  margin-left: auto;
 }
 
 .nav_link {
@@ -92,6 +94,7 @@ nav {
   position: relative;
   transition: all 300ms;
   margin: 0 24px;
+  margin-left: 24px;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -114,11 +117,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  padding-top: 4px;
-  margin: 8px 0;
+  padding: 8px 24px;
+  margin: 0 auto;
   background-color: #ffffff;
   width: 100%;
+  max-width: 1200px;
 }
 
 .sign-up {
@@ -234,7 +237,75 @@ nav {
   visibility: visible;
 }
 
-/* MEDIA */
+/* MAP SECTION */
+
+#Areas {
+  background:
+    linear-gradient(
+      135deg,
+      rgb(254,218,188),
+      rgb(255,245,236)
+    );
+}
+
+.section_header {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.section_header .section_sub-title {
+  margin: 16px auto;
+  max-width: 800px;
+}
+
+.section_header .section_para {
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.map_wrapper {
+  background: white;
+  border-radius: 28px;
+  overflow: hidden;
+
+  box-shadow:
+    0 30px 80px rgba(0,0,0,.08);
+
+  border:
+    1px solid rgba(0,0,0,.05);
+}
+
+#serviceMap {
+  height: 750px;
+  width: 100%;
+}
+
+.leaflet-popup-content {
+  text-align: center;
+}
+
+.project_popup img {
+  width: 180px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+}
+
+.project_popup h3 {
+  margin-bottom: 8px;
+}
+
+.project_popup a {
+  display: inline-block;
+  margin-top: 8px;
+  color: rgb(42,149,69);
+  font-weight: 700;
+}
+
+@media (max-width: 768px) {
+  #serviceMap {
+    height: 550px;
+  }
+}
 
 /* ====================================
    FOOTER

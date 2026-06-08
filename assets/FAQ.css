@@ -61,6 +61,7 @@ nav {
   width: 100%;
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
 }
 
 .nav_logo {
@@ -81,6 +82,7 @@ nav {
   display: flex;
   align-items: center;
   padding-bottom: 2px;
+  margin-left: auto;
 }
 
 .nav_link {
@@ -92,6 +94,7 @@ nav {
   position: relative;
   transition: all 300ms;
   margin: 0 24px;
+  margin-left: 24px;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -114,11 +117,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  padding-top: 4px;
-  margin: 8px 0;
+  padding: 8px 24px;
+  margin: 0 auto;
   background-color: #ffffff;
   width: 100%;
+  max-width: 1200px;
 }
 
 .sign-up {
@@ -234,7 +237,83 @@ nav {
   visibility: visible;
 }
 
-/* MEDIA */
+/* =========================
+   FAQ SECTION (FIXED / BALANCED)
+========================= */
+
+#FAQ {
+  background: linear-gradient(135deg, rgb(254,218,188), rgb(255,245,236));
+}
+
+/* IMPORTANT: constrain content like your other sections */
+#FAQ .container {
+  padding: 120px 24px;
+  display: flex;
+  justify-content: center;
+}
+
+/* inner wrapper so it doesn't stretch full width */
+#FAQ .section_wrapper {
+  width: 100%;
+  max-width: 900px;
+}
+
+/* title spacing control */
+#FAQ .section_sub-title {
+  font-size: 44px;
+  margin-top: 10px;
+  line-height: 1.1;
+}
+
+#FAQ .section_para {
+  margin-top: 18px;
+  font-size: 16px;
+  color: #4a5568;
+  max-width: 700px;
+}
+
+/* GRID (smaller + tighter) */
+.faq_grid {
+  margin-top: 50px;
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 16px;
+}
+
+/* CARD (less bulky = less “takes over page”) */
+.faq_item {
+  background: white;
+  padding: 20px 22px;
+  border-radius: 14px;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 12px 30px rgba(0,0,0,0.05);
+  transition: 250ms ease;
+}
+
+.faq_item:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 18px 40px rgba(0,0,0,0.08);
+}
+
+.faq_item h3 {
+  font-size: 16px;
+  margin-bottom: 8px;
+  color: #1a202c;
+  font-weight: 700;
+}
+
+.faq_item p {
+  font-size: 14.5px;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* MOBILE */
+@media (max-width: 900px) {
+  #FAQ .section_sub-title {
+    font-size: 32px;
+  }
+}
 
 /* ====================================
    FOOTER

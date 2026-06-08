@@ -61,6 +61,7 @@ nav {
   width: 100%;
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
 }
 
 .nav_logo {
@@ -81,6 +82,7 @@ nav {
   display: flex;
   align-items: center;
   padding-bottom: 2px;
+  margin-left: auto;
 }
 
 .nav_link {
@@ -92,6 +94,7 @@ nav {
   position: relative;
   transition: all 300ms;
   margin: 0 24px;
+  margin-left: 24px;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -114,11 +117,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  padding-top: 4px;
-  margin: 8px 0;
+  padding: 8px 24px;
+  margin: 0 auto;
   background-color: #ffffff;
   width: 100%;
+  max-width: 1200px;
 }
 
 .sign-up {
@@ -234,35 +237,114 @@ nav {
   visibility: visible;
 }
 
-/* SERVICES */
+/* =========================
+   SERVICES SECTION
+========================= */
 
-.services_grid {
+#Services {
+  background: linear-gradient(
+    135deg,
+    rgb(254,218,188),
+    rgb(255,245,236)
+  );
+}
+
+#Services .section_wrapper {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+#Services .section_para {
+  max-width: 700px;
+  margin-top: 20px;
+}
+
+.service_grid {
+  margin-top: 60px;
+
   display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  gap: 30px;
-  margin-top: 64px;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
 }
 
 .service_card {
   background: white;
-  padding: 36px;
+
+  padding: 36px 32px;
+
   border-radius: 20px;
-  box-shadow: 0 12px 30px rgba(0,0,0,.08);
-  transition: 300ms;
+
+  border: 1px solid rgba(0,0,0,.05);
+
+  box-shadow: 0 20px 50px rgba(0,0,0,.06);
+
+  transition: all 300ms ease;
+
+  position: relative;
+
+  overflow: hidden;
+}
+
+.service_card::before {
+  content: "";
+
+  position: absolute;
+
+  top: 0;
+  left: 0;
+
+  width: 100%;
+  height: 4px;
+
+  background: rgb(42,149,69);
+
+  transform: scaleX(0);
+
+  transition: 300ms ease;
 }
 
 .service_card:hover {
   transform: translateY(-8px);
+
+  box-shadow: 0 30px 70px rgba(0,0,0,.10);
+}
+
+.service_card:hover::before {
+  transform: scaleX(1);
 }
 
 .service_card i {
-  font-size: 42px;
+  font-size: 44px;
+
   color: rgb(42,149,69);
+
   margin-bottom: 20px;
 }
 
 .service_card h3 {
-  margin-bottom: 16px;
+  font-size: 22px;
+
+  margin-bottom: 12px;
+
+  color: #1a202c;
+}
+
+.service_card p {
+  font-size: 15px;
+
+  line-height: 1.7;
+
+  color: #4a5568;
+}
+
+/* RESPONSIVE */
+
+@media (max-width: 900px) {
+
+  .service_grid {
+    grid-template-columns: 1fr;
+  }
+
 }
 
 /* ====================================

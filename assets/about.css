@@ -16,7 +16,7 @@ body {
 
 .row {
   width: 100%;
-  max-width: 1280px;
+  max-width: 1200px;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
@@ -25,7 +25,7 @@ body {
 }
 
 .container {
-  padding: 96px 0;
+  padding: 120px 24px;
 }
 
 a {
@@ -61,6 +61,7 @@ nav {
   width: 100%;
   background-color: #ffffff;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  z-index: 9999;
 }
 
 .nav_logo {
@@ -81,6 +82,7 @@ nav {
   display: flex;
   align-items: center;
   padding-bottom: 2px;
+  margin-left: auto;
 }
 
 .nav_link {
@@ -92,6 +94,7 @@ nav {
   position: relative;
   transition: all 300ms;
   margin: 0 24px;
+  margin-left: 24px;
   text-decoration: none;
   white-space: nowrap;
 }
@@ -114,11 +117,11 @@ nav {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 10px;
-  padding-top: 4px;
-  margin: 8px 0;
+  padding: 8px 24px;
+  margin: 0 auto;
   background-color: #ffffff;
   width: 100%;
+  max-width: 1200px;
 }
 
 .sign-up {
@@ -232,6 +235,156 @@ nav {
   opacity: 1;
   pointer-events: auto;
   visibility: visible;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Inter", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, rgb(254,218,188), rgb(255,245,236));
+  color: #243e63;
+  overflow-x: hidden;
+}
+
+/* =========================
+   TYPOGRAPHY (PREMIUM LOOK)
+========================= */
+
+.section_title {
+  font-size: 14px;
+  letter-spacing: 2.5px;
+  font-weight: 700;
+  color: rgb(42,149,69);
+  text-transform: uppercase;
+  margin-bottom: 16px;
+}
+
+.section_sub-title {
+  font-size: 52px;
+  font-weight: 800;
+  line-height: 1.1;
+  color: #1a202c;
+  max-width: 900px;
+}
+
+.section_para {
+  margin-top: 24px;
+  font-size: 18px;
+  line-height: 1.8;
+  color: #4a5568;
+  max-width: 700px;
+}
+
+/* =========================
+   WHY CHOOSE US (PREMIUM GRID)
+========================= */
+
+#WhyUs {
+  padding-top: 20px;
+}
+
+.section_wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.why_cards {
+  margin-top: 60px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 28px;
+}
+
+/* CARD DESIGN */
+.why_card {
+  background: white;
+  padding: 32px;
+  border-radius: 18px;
+  border: 1px solid rgba(0,0,0,0.06);
+  box-shadow: 0 20px 50px rgba(0,0,0,0.06);
+  transition: all 300ms ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.why_card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 30px 70px rgba(0,0,0,0.10);
+}
+
+.why_card i {
+  font-size: 26px;
+  color: rgb(42,149,69);
+  margin-bottom: 16px;
+}
+
+.why_card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+  color: #1a202c;
+}
+
+.why_card p {
+  font-size: 15px;
+  color: #4a5568;
+  line-height: 1.6;
+}
+
+/* =========================
+   FOOTER (FIXED + CLEAN)
+========================= */
+
+footer {
+  background: #0f1a12;
+  color: white;
+  text-align: center;
+  padding: 80px 24px;
+}
+
+.footer_container img {
+  width: 180px;
+  margin: 0 auto 20px;
+  display: block;
+}
+
+.footer_socials {
+  margin: 24px 0;
+}
+
+.footer_socials a {
+  font-size: 20px;
+  margin: 0 14px;
+  color: white;
+  transition: 250ms;
+}
+
+.footer_socials a:hover {
+  color: rgb(42,149,69);
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 900px) {
+  .why_cards {
+    grid-template-columns: 1fr;
+  }
+
+  .section_sub-title {
+    font-size: 36px;
+  }
+
+  .container {
+    padding: 100px 20px;
+  }
 }
 
 /* ====================================

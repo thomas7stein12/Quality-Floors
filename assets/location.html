@@ -7,6 +7,8 @@
     <link rel="stylesheet" href="/assets/location.css">
     <script src="/assets/location.js" defer></script>
     <script src="https://kit.fontawesome.com/7178c88896.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css"/>
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
 </head>
 <body>
     <section id="landing">
@@ -36,28 +38,32 @@
     </section>
 <section id="Areas">
 
-    <div class="container">
+  <div class="container">
 
-        <h1 class="section_title">
-            SERVICE AREA
-        </h1>
+    <div class="section_header">
 
-        <h2 class="section_sub-title">
-            Proudly serving homeowners.
-        </h2>
+      <h1 class="section_title">
+        SERVICE AREA
+      </h1>
 
-        <div class="area_grid">
+      <h2 class="section_sub-title">
+        Flooring projects across Tennessee and Georgia.
+      </h2>
 
-            <span>Chattanooga</span>
-            <span>East Ridge</span>
-            <span>Hixson</span>
-            <span>Ooltewah</span>
-            <span>Cleveland</span>
-            <span>Ringgold</span>
-
-        </div>
+      <p class="section_para">
+        Based in Collegedale, Tennessee and proudly serving homeowners
+        throughout the Chattanooga region and beyond.
+      </p>
 
     </div>
+
+    <div class="map_wrapper">
+
+      <div id="serviceMap"></div>
+
+    </div>
+
+  </div>
 
 </section>
 </body>
@@ -79,7 +85,7 @@
 
         <div class="footer_socials">
 
-            <a href="#">
+            <a href="https://www.facebook.com/kirenia.castillolorente" target="_blank">
                 <i class="fab fa-facebook-f"></i>
             </a>
 
